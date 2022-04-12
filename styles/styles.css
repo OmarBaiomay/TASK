@@ -524,6 +524,48 @@ body{
 }
 /*End Pricing*/
 
+/*Start More Serv*/
+.more-services{
+    margin: 5rem 0;
+    background-color: var(--gray-bg);
+    padding-bottom: 5rem;
+}
+
+.more-services .heading{
+    margin-bottom: 1rem;
+}
+
+.more-services .container{
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+}
+
+.more-services .container .extra-service{
+    width: 33.3%;
+    text-align: center;
+    background-color: var(--white);
+    padding: 2rem 1rem;
+    box-shadow: 0px 5px 10px 1px rgb(0 0 0 / 30%);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.more-services .container .extra-service img{
+    width: 75px;
+    height: 75px;
+}
+
+.more-services .container .extra-service p{
+    font-size: 0.9rem;
+}
+
+.more-services .container .extra-service:hover{
+    transform: translateY(-5px);
+    background-color: var(--primary-color);
+}
+
+/*End More Serv*/
+
 
 /* Start Testimonials */
 .testimonials{
