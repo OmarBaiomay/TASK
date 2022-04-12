@@ -36,7 +36,7 @@ section{
 
 body{
     overflow: hidden;
-    height: 5000px;
+    height: 10000px;
 }
 
 /* Custom Classes */
@@ -566,6 +566,117 @@ body{
 
 /*End More Serv*/
 
+/*Start Contact US*/
+.contact-us .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.contact-us .container .conatct-form-wrapper,
+.contact-us .container .conatct-info{
+    width: 50%;
+}
+
+.contact-us .container .conatct-form-wrapper{
+    text-align: right;
+    border-right: 2px solid var(--gray);
+    padding-right: 5rem;
+}
+
+.contact-us .container .conatct-form-wrapper .contact-form{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.contact-us .container .conatct-form-wrapper .contact-form .input-group{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 48%;
+    margin: 0.5rem 0;
+}
+
+.contact-us .container .conatct-form-wrapper .contact-form .input-group label,
+.contact-us .container .conatct-form-wrapper .contact-form .textarea-group label{
+    font-size: 1.2rem;
+}
+
+.contact-us .container .conatct-form-wrapper .contact-form .input-group input,
+.contact-us .container .conatct-form-wrapper .contact-form .textarea-group textarea{
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: right;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid var(--gray);
+    border-radius: 7px;
+}
+
+
+.contact-us .container .conatct-form-wrapper .contact-form .input-group input:hover,
+.contact-us .container .conatct-form-wrapper .contact-form .input-group input:focus,
+.contact-us .container .conatct-form-wrapper .contact-form .input-group input:hover,
+.contact-us .container .conatct-form-wrapper .contact-form .textarea-group textarea:focus{
+    box-shadow: 0 0 5px 2px var(--primary-color)
+}
+
+.contact-us .container .conatct-form-wrapper .contact-form .textarea-group{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.contact-us .container .conatct-form-wrapper .contact-form .textarea-group textarea{
+    max-width: 100%;
+    max-height: 10rem;
+    min-width: 100%;
+    min-height: 10rem;
+}
+
+.contact-us .container .conatct-form-wrapper .contact-form button{
+    cursor: pointer;
+}
+
+.contact-us .container .contact-info{
+    height: 100%;
+    text-align: right;
+}
+
+
+.contact-us .container .contact-info .item{
+    margin-bottom: 3rem;
+}
+
+.contact-us .container .contact-info .item h3{
+    font-size: 1.3rem;
+}
+
+.contact-us .container .contact-info .item .contact{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-us .container .contact-info .item .contact img{
+    width: 20px;
+    height: 20px;
+}
+
+.contact-us .container .contact-info .item .contact a{
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+}
+
+/*End Contact US*/
+
 
 /* Start Testimonials */
 .testimonials{
@@ -587,7 +698,6 @@ body{
 .testimonials .content .testi:hover .testi-content{
     display: block;
 }
-
 
 .testimonials .content .testi img{
     border: 5px solid var(--white);
