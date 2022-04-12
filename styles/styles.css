@@ -674,9 +674,29 @@ body{
     color: var(--dark-gray);
     font-size: 1.2rem;
 }
-
 /*End Contact US*/
 
+/*Start pic-bg*/
+.pic-bg{
+    background-image: url(../images/bg/Rectangle\ 659.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.pic-bg h2{
+    color: var(--gray-bg);
+    font-size: 2.5rem;
+}
+
+.pic-bg p{
+    color: var(--gray);
+    font-size: 1.5rem;
+}
+
+/*End pic-bg*/
 
 /* Start Testimonials */
 .testimonials{
