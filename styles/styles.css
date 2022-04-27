@@ -36,7 +36,12 @@ section{
 
 body{
     overflow: hidden;
-    height: 10000px;
+}
+
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 /* Custom Classes */
@@ -71,7 +76,7 @@ body{
     width: 60px;
     height: 4px;
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: -5px;
     background-color: var(--primary-color);
 }
@@ -173,12 +178,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-}
-
-.hero-section #particles-js{
-    position: absolute;
-    width: 100%;
-    height: 100%;
 }
 
 .hero-section img{
@@ -333,13 +332,15 @@ body{
 }
 
 
+
+
 .services .container .information .service-list{
     margin-bottom: 2rem;
 }
 
 .services .container .information .service-list .list-item{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-start;
     flex-direction: row-reverse;
     gap: 0.7rem;
@@ -348,6 +349,10 @@ body{
 .services .container .information .service-list .list-item p{
     color: var(--dark-gray);
     line-height: 3;
+}
+
+.services .container .vedio img{
+    width: 100%;
 }
 /* End Services */
 
@@ -526,7 +531,6 @@ body{
 
 /*Start More Serv*/
 .more-services{
-    margin: 5rem 0;
     background-color: var(--gray-bg);
     padding-bottom: 5rem;
 }
@@ -662,7 +666,7 @@ body{
 .contact-us .container .contact-info .item .contact{
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: baseline;
     gap: 1rem;
 }
 
@@ -702,7 +706,7 @@ body{
 
 /* Start Testimonials */
 .testimonials{
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .testimonials .content{
@@ -801,6 +805,76 @@ body{
 }
 /* End Testimonials */
 
+/* Start Footer */
+footer{
+    position: relative;
+    background-image: url(../images/bg/Rectangle\ 627.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 2.5rem 0 2rem 0;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li a{
+    color: var(--white);
+}
+
+.top-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+
+.top-footer nav {
+    padding-top: 2rem;
+}
+
+.top-footer nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+.bottom-footer{
+    color: var(--white);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--dark-gray);
+    padding-top: 2rem;
+}
+
+.bottom-footer ul{
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-footer ul li a{
+    display: inline-block;
+    color: var(--white);
+    background-color: var(--dark-gray);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.bottom-footer ul li a i{
+    font-style: unset;
+}
+
+
+/* End Footer */
+
 @media(max-width: 1200px){
     .hero-section .content p{
         font-size: 1.2rem;
@@ -835,6 +909,21 @@ body{
         font-size: 16px;
     }
 
+    .services .container, .statistics .container{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services .container{
+        
+        flex-direction: column-reverse;
+    }
+
+    .pricing .container .price-table .plan-features .btn{
+        padding: 0.7rem 1.1rem;
+    }
+
     .brands{
         margin-top: 10rem;
     }
@@ -845,6 +934,10 @@ body{
 
     .testimonials .content img.person {
         width: 70px;
+    }
+
+    .contact-us .container .conatct-form-wrapper{
+        padding-right: 2rem;
     }
 
 }
@@ -941,6 +1034,23 @@ body{
         font-size: 12px;
     }
 
+    .pricing .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .pricing .container .price-table{
+        width: 70%
+    }
+
+    .more-services .container .extra-service h3{
+        font-size: 0.8rem;
+    }
+
+    .more-services .container .extra-service p{
+        font-size: 0.8rem;
+    }
+
     .brands img{
         width: 185px;
         margin-bottom: 1.5rem;
@@ -948,6 +1058,22 @@ body{
 
     .testimonials .content img.person {
         width: 70px;
+    }
+
+    .contact-us .container{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .contact-us .container .conatct-form-wrapper{
+        border: unset;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .contact-us .container .conatct-form-wrapper,
+    .contact-us .container .conatct-info{
+        width: 100%;
     }
 
 
@@ -1007,6 +1133,41 @@ body{
         width: 55%;
     }
 
+    .services .container .information h3, 
+    .statistics .container .information h3{
+        font-size: 1.3rem;
+    }
+
+    .services .container .information .service-list .list-item{
+        align-items: baseline;
+    }
+    .services .container .information .service-list .list-item p{
+        font-size: 16px;
+    }
+
+    .statistics .container .information .statistics-list .statistics-item{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pricing .container .price-table{
+        width: 100%
+    }
+
+    .pricing .container .price-table .plan-features .feature p{
+        font-size: 1rem;
+    }
+
+    .more-services .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .more-services .container .extra-service{
+        width: 100%;
+    }
+
     .brands img{
         width: 185px;
         margin: 1.5rem auto;
@@ -1021,7 +1182,21 @@ body{
         transform: translate(-75%);
     }
 
+    .contact-us .container .conatct-form-wrapper .contact-form .input-group{
+        width: 100%;
+    }
 
+    .top-footer nav ul{
+        flex-direction: column;
+    }
+
+    .bottom-footer{
+        flex-direction: column-reverse;
+    }
+
+    .bottom-footer ul{
+        margin-bottom: 2rem;
+    }
 }
 
 @media(max-width: 426px){
@@ -1043,6 +1218,15 @@ body{
         width: 100%;
     }
 
+    .pic-bg h2{
+        font-size: 1.8rem;
+    }
+
+    .pic-bg p{
+        font-size: 1rem;
+    }
+
+
 }
 
 @media(max-width: 375px){
@@ -1057,7 +1241,13 @@ body{
     .brands{
         margin-top: 0;
     }
+    .services .container .information .service-list .list-item p{
+        font-size: 13px;
+    }
 
+    .more-services .heading h2{
+        font-size: 1.6rem;
+    }
     .testimonials .content img.person {
         width: 40px;
         border: 3px solid var(--white) 

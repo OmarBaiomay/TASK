@@ -11,7 +11,6 @@ particlesJS.load('particles-js', 'scripts/particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
 
-
 /**** Open & Close Navbar ****/
 menuBtn.addEventListener("click", (e)=>{
     navbarList.classList.add("active");
